@@ -13,7 +13,7 @@ auth=OAuth(tokenkey,tokensecret, CONSUMER_KEY,CONSUMER_SECRET))
 
 tweets = t.statuses.user_timeline(screen_name="realDonaldTrump")
 
-f = open('OrangeTweets.txt', 'w')
+f = open('files/OrangeTweets.txt', 'w')
 for t in tweets:
     text = t["text"]
     create_time = t["created_at"]
